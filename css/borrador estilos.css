@@ -1,0 +1,11 @@
+.wrapper .form .inputfield .custom_select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 440px;
+    height: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 3px;
+}

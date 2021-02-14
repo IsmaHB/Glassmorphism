@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Declaración de Meta-Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Ismael Hamud Bedmar" />
+    <meta name="Portfolio_Personal" content="Portfolio con contacto, proyectos y solicitud de presupuesto">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="En este portfolio web muestro mis proyectos en desarrollo web, contacto y presupuestos para la contratación de servicios para la creación de webs responsives en cualquier dispositivo, dinámicas y con diseños atractivos personalizables"
+    />
+    <meta name="category" content="Portfolio_Web">
+    <meta name="keywords" content="Portfolio, Web Development, presupuesto, contacto" />
+    <meta name="revising-after" content="15 days">
+
+    <!--Declaración de fuentes extraídas de googlefont-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Yusei+Magic&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" type="text/css">
+
+    <!--Declaración de ficheros de estilo y scripts de JavaScript-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="java.js"></script>
+
+    <!--Declaración del titulo del proyecto-->
+    <title>Website Portfolio Ismael Hamud Bedmar</title>
+</head>
+
+<body>
+    <span class="glass"></span>
+    <div class="container">
+
+        <!--Barra de navegación y logo-->
+        <div class="navbar">
+            <a href="index.html" class="logo"><span>I</span>smael <span>H.B</span></a>
+            <ul class="list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portfolio.html">Servicios</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Encu&eacute;ntranos</a></li>
+            </ul>
+            <a href="subscripcion-newsletter.html" class="button">¡Suscríbete gratis!</a>
+        </div>
+        <!--fin barra de navegación y logo-->
+
+        <!--Sección de contenido-->
+        <div class="wrapper">
+            <div class="title">
+                Consultanos precios
+            </div>
+            <div class="description-wrapper">
+                <p>Envianos una consulta con el servicio que te gustaría contratar y nos pondremos en contacto contigo rápidamente. <br/> Nuestro horario de atención es de Lunes a Viernes de 8:00 a 14:00 y de 16:00 a 20:00.<br/> Tenemos servicio a domicilio
+                    en toda la provincia de Barcelona.</p>
+            </div>
+            <div class="form">
+                <div class="inputfield">
+                    <label>Nombre</label>
+                    <input type="text" class="input" placeholder="Nombre">
+                </div>
+                <div class="inputfield">
+                    <label>Apellidos</label>
+                    <input type="text" class="input" placeholder="Apellidos">
+                </div>
+                <div class="inputfield">
+                    <label>Preferencia de contacto</label>
+                    <div class="custom_select">
+                        <select>
+                    <option value="Phone preference">Quiero que me contacten por...</option>
+                    <option value="Email preference">Email</option>
+                    <option value="Phone preference">Tel&eacute;fono</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label>Correo electr&oacute;nico</label>
+                    <input type="email" class="input" placeholder="email@email.com">
+                </div>
+                <div class="inputfield">
+                    <label>N&uacute;mero de tel&eacute;fono</label>
+                    <input type="tel" class=input name="phone" placeholder="N&uacute;mero de tel&eacute;fono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+                <div class="inputfield">
+                    <label>Direcci&oacute;n</label>
+                    <input type="text" class="input" placeholder="Calle, localidad y provincia.">
+                </div>
+                <div class="inputfield">
+                    <label>C&oacute;digo Postal</label>
+                    <input type="text" class="input" placeholder="C&oacute;digo Postal">
+                </div>
+                <div class="inputfield">
+                    <label>Descripción breve</label>
+                    <textarea class="textarea" placeholder="Escribe,brevemente, que tipo de servicio buscas."></textarea>
+                </div>
+                <div class="inputfield terms">
+                    <label class="check">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                    </label>
+                    <p>
+                        <a href="">
+                            <!--En este href debemos insertar en enlace que redirija a los terminos y condiciones legales-->
+                            Acepto t&eacute;rminos y condiciones.</a>
+                    </p>
+                </div>
+                <div class="inputfield">
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </div>
+        </div>
+        <!--fin sección de contenido-->
+
+    </div>
+</body>

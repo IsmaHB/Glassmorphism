@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: radial-gradient(circle, #25412b 10%, #2311a8 42%, #8d8dc1 68%);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+
+/*estilo de la caja con efecto glass*/
+
+span.glass {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    overflow-y: visible;
+}
+
+.container {
+    position: relative;
+    width: 990px;
+    height: fit-content;
+    min-height: 600px;
+    padding: 30px 45px;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.0px);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+/*estilos de barra de navegación*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Josefin Sans', serif;
+}
+
+.navbar .logo {
+    color: #2f2e41;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Redressed', cursive;
+    font-size: 20px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.navbar .logo span {
+    font-size: 38px;
+    color: #9a533d;
+}
+
+.navbar .list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar .list li a {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    color: #9a533d;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: border 300ms linear;
+}
+
+.navbar .list li a:hover {
+    border-color: #9a533d;
+}
+
+.navbar .button {
+    display: inline-block;
+    border: 1px solid black;
+    color: white;
+    background: #9a533d;
+    border-radius: 10px;
+    padding: 8px 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 300ms, background 300ms, border 300ms linear;
+}
+
+.navbar .button:hover {
+    color: white;
+    border: 1px solid #9a533d;
+    background: #bc8775;
+}
+
+
+/*final de estilos barra de navegación*/
+
+
+/*INICIO DE ESTILOS DEL CONTENIDO index.html*/
+
+.content {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.contentleft {
+    position: relative;
+    width: auto;
+    padding: 40px 0;
+    font-family: 'Josefin Sans', serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*div de la imagen del inicio*/
+
+.contentright {
+    position: relative;
+    left: 0px;
+}
+
+.contentleft .title {
+    position: relative;
+    margin-top: 40px;
+}
+
+.contentleft .title p {
+    color: #2f2e41;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', serif;
+    font-style: italic;
+}
+
+.contentleft .title .light {
+    font-weight: normal;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.contentleft .text {
+    align-content: center;
+    text-align: center;
+}
+
+.contentleft .text p {
+    color: #2f2e41;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+
+/*estilos del button para acceso directo a contacto*/
+
+.contentleft .button-box {
+    position: static;
+    margin-top: 10%;
+}
+
+.contentleft .button-box a {
+    background-image: linear-gradient(to right, #614385 10%, #516395 50%, #614385 100%);
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200%;
+    /*ponemos 200% en background para que cuando se aplique el hover el efecto deseado sea visible*/
+    color: white;
+    box-shadow: 0 0 20px white;
+    border-radius: 10px;
+    display: flexbox;
+    text-decoration: none;
+    border: 1px solid black;
+    font-weight: 500;
+}
+
+.contentleft .button-box a .arrow-right {
+    border: 3px solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    content: none;
+}
+
+.contentleft .button-box a:hover {
+    background-position: right;
+    color: white;
+}
+
+.contentleft .button-box a .icon {
+    padding: 5px;
+}
+
+.contentright {
+    width: fit-content;
+}
+
+.main-image img {
+    position: relative;
+}
+
+
+/*FIN DE ESTILOS DEL CONTENIDO index.html*/
+
+
+/*INICIO DE ESTILOS DEL CONTENIDO portfolio.html*/
+
+
+/*estilos del titulo portfolio*/
+
+.portfolio-title {
+    position: relative;
+    font-family: 'Josefin Sans', serif;
+    align-content: center;
+    text-align: center;
+}
+
+.portfolio-title p {
+    color: #2f2e41;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', serif;
+    font-style: italic;
+}
+
+.portfolio-title .light {
+    font-weight: normal;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+
+/*estilo de boxes*/
+
+.portfolio-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    width: 300px;
+    height: 280px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.box img {
+    width: 95%;
+    height: 95%;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.box .box-tittle {
+    text-align: center;
+    margin-bottom: 0;
+    font-style: italic;
+    color: #2f2e41;
+}
+
+.box-content {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    /*hasta aquí para centrar el cuadro con texto dentro del box*/
+    width: 275px;
+    height: 265px;
+    background: rgba(255, 254, 254, 0.653);
+    flex-direction: column;
+    color: #2f2e41;
+    clip-path: circle (0% at 50% 50%);
+    transition: all .5s;
+    max-width: 0;
+    opacity: 0;
+    /*hasta aquí para definir los parámetros del cuadro de texto y ocultarlo previo hover*/
+}
+
+
+/*parámetros del hover en boxes*/
+
+.box:hover .box-content {
+    clip-path: circle(100% at 50% 50%);
+    opacity: 1;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.box:hover img {
+    filter: blur(10px);
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.box:hover .box-tittle {
+    display: none;
+}
+
+
+/*estilo del texto y titulo del box-content*/
+
+.box-content .box-hovertitle {
+    text-align: center;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.box-content p {
+    margin: 5px 10px 0 10px;
+    text-align: center, justify;
+    font-style: italic;
+    font-weight: 650;
+}
+
+
+/*FIN DE ESTILOS DEL CONTENIDO portfolio.html*/
+
+
+/*INICIO DE ESTILOS DEL CONTENIDO presupuesto.html*/
+
+.wrapper {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: #1e1b35;
+    border-radius: 10px;
+}
+
+
+/*estilos del titulo y descripción de la sección*/
+
+.wrapper .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #9a533d;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .description-wrapper p {
+    margin: 5px 10px 20px 10px;
+    text-align: center, justify;
+    font-style: italic;
+    font-weight: 650;
+    color: #757575;
+}
+
+
+/*Estilos del formulario*/
+
+.wrapper .form {
+    width: 100%;
+}
+
+.wrapper .form .inputfield {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-family: 'Josefin Sans', serif;
+}
+
+.wrapper .form .inputfield label {
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea,
+.wrapper .form .inputfield .custom_select select {
+    width: 100%;
+    outline: none;
+    border: 2px solid #9a533d;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+
+/*He añadido lo siguiente ya que no lograba cuadrar el tamaño del .custom_select de otro modo*/
+
+.wrapper .form .inputfield .custom_select {
+    position: relative;
+    width: 107%;
+    height: auto;
+}
+
+.wrapper .form .inputfield p a {
+    font-size: 14px;
+    color: #757575;
+    text-decoration: #9fa2a1
+}
+
+
+/*Estilos del checkbox para aceptar terminos y condiciones*/
+
+.wrapper .form .inputfield .check {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.wrapper .form .inputfield .check .checkmark {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #9a533d;
+    display: block;
+    position: relative;
+}
+
+
+/*Con el siguiente estilo conseguimos cuadrar el checkbox diseñado sobre el original blanco*/
+
+.wrapper .form .inputfield .check input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+
+/*estilos para que aparezca el checked blanco*/
+
+.wrapper .form .inputfield .check .checkmark:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+    /*display:none hacemos que la flecha check quede sin visualizar en caso de no checked*/
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked~.checkmark {
+    background: #9a533d;
+    /*Color de fondo del checkbox:checked*/
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked~.checkmark:after {
+    display: block;
+    /*esto permite que aparecha la flecha check al clicar en la casilla*/
+}
+
+
+/*Estilos del button "Enviar"*/
+
+.wrapper .form .inputfield .btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0px;
+    background: #9a533d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover {
+    background: #bc8775;
+}
+
+.wrapper .form .inputfield:last-child {
+    margin-bottom: 0;
+}
+
+
+/*FIN DE ESTILOS DEL CONTENIDO presupuesto.html*/
