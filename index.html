@@ -39,7 +39,28 @@
                 <li><a href="presupuesto.html">Presupuesto</a></li>
                 <li><a href="contacto.html">Encu&eacute;ntranos</a></li>
             </ul>
-            <a href="subscripcion-newsletter.html" class="button">¡Suscríbete gratis!</a>
+            <button class="button open-button" onclick="openForm()">¡Suscríbete gratis!</button>
+            <div class="form-popup" id="myForm">
+                <form action="#" class="form-container">
+                  <h1>Newsletter</h1>
+                    <p>Recibe por correo promociones y cursos gratuitos</p>
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required> 
+                  <div class="inputfield terms">
+                    <label class="check">
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                    </label>
+                    <p>
+                     <a href=""><!--insertar en enlace que redirija a los terminos y condiciones legales-->
+                     Acepto t&eacute;rminos y condiciones.</a>
+                    </p>
+                  </div>
+            
+                  <button type="submit" class="btn">Enviar</button>
+                  <button type="submit" class="btn cancel" onclick="closeForm()">Cerrar</button>
+                </form>
+              </div>
         </div>
         <!--fin barra de navegación y logo-->
 
