@@ -128,7 +128,7 @@ span.glass {
     background-color: white;
 }
 
-.form-container input[type=text], {
+.form-container input[type=text] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -178,7 +178,7 @@ span.glass {
 
 .contentright {
     position: relative;
-    display:  ;
+    display: none;
 }
 
 
