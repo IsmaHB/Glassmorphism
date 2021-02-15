@@ -121,7 +121,7 @@ span.glass {
 
 .content {
     display: inline-flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .contentleft {
@@ -129,7 +129,7 @@ span.glass {
     width: auto;
     padding: 40px 0;
     font-family: 'Josefin Sans', serif;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
 }
@@ -139,20 +139,30 @@ span.glass {
 
 .contentright {
     position: relative;
-    left: 0px;
+    display: ;
 }
+
+
+/*Div del titulo*/
 
 .contentleft .title {
     position: relative;
     margin-top: 40px;
 }
 
-.contentleft .title p {
+.contentleft .title h1 {
     color: #2f2e41;
     text-transform: capitalize;
     font-weight: 500;
     font-size: 3rem;
     font-family: 'Josefin Sans', serif;
+    font-style: italic;
+}
+
+.contentleft .title h1 span {
+    font-size: 38px;
+    color: #9a533d;
+    font-family: 'Redressed', cursive;
     font-style: italic;
 }
 
@@ -162,17 +172,8 @@ span.glass {
     font-weight: 300;
     font-style: italic;
     text-transform: capitalize;
-}
-
-.contentleft .text {
-    align-content: center;
-    text-align: center;
-}
-
-.contentleft .text p {
     color: #2f2e41;
-    font-weight: 400;
-    line-height: 1.5rem;
+    font-family: 'Josefin Sans', serif;
 }
 
 
@@ -181,6 +182,7 @@ span.glass {
 .contentleft .button-box {
     position: static;
     margin-top: 10%;
+    align-self: center;
 }
 
 .contentleft .button-box a {
