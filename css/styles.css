@@ -129,7 +129,7 @@ span.glass {
 }
 
 .form-container input[type=text] {
-    width: 100%;
+    width: 90%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
@@ -178,6 +178,12 @@ span.glass {
 .contentright {
     position: relative;
     display: none;
+    max-height: 4%;
+    max-width: 4%;
+}
+
+.main-image img {
+    width: fit-content;
 }
 
 
@@ -275,14 +281,14 @@ span.glass {
 
 /*estilos del titulo portfolio*/
 
-.portfolio-title {
+.services-title {
     position: relative;
     font-family: 'Josefin Sans', serif;
     align-content: center;
     text-align: center;
 }
 
-.portfolio-title p {
+.services-title p {
     color: #2f2e41;
     text-transform: capitalize;
     font-weight: 500;
@@ -291,7 +297,7 @@ span.glass {
     font-style: italic;
 }
 
-.portfolio-title .light {
+.services-title .light {
     font-weight: normal;
     font-size: 1.5em;
     font-weight: 300;
@@ -300,9 +306,9 @@ span.glass {
 }
 
 
-/*estilo de boxes*/
+/*estilo de boxes index.html*/
 
-.portfolio-content {
+.services-content {
     display: flex;
     flex-direction: row;
 }

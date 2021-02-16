@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Yusei+Magic&display=swap" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" type="text/css">
 
+    <!--Declaración de iconos fa extraídos en fontawesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!--Declaración de ficheros de estilo y scripts de JavaScript-->
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
@@ -35,12 +37,14 @@
             <a href="index.html" class="logo"><span>I</span>smael <span>H.B</span></a>
             <ul class="list">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="portfolio.html">Servicios</a></li>
+                <li><a href="portfolio.html">Proyectos</a></li>
                 <li><a href="presupuesto.html">Presupuesto</a></li>
                 <li><a href="contacto.html">Encu&eacute;ntranos</a></li>
             </ul>
+
             <button class="button open-button" onclick="openForm()">¡Suscríbete gratis!</button>
             <div class="form-popup" id="myForm">
+                <!--Dejamos el atributo "action" escrito por si queremos enlazarlo en el futuro con un archivo php para almacenamiento de datos -->
                 <form action="#" class="form-container">
                     <h1>Newsletter</h1>
                     <p>Recibe por correo promociones y cursos gratuitos</p>
@@ -48,16 +52,13 @@
                     <input type="text" placeholder="Enter Email" name="email" required>
                     <div class="inputfield terms">
                         <label class="check">
-                    <input type="checkbox" required>
-                    <span class="checkmark"></span>
-                    </label>
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        </label>
                         <p>
-                            <a href="">
-                                <!--insertar en enlace que redirija a los terminos y condiciones legales-->
-                                Acepto t&eacute;rminos y condiciones.</a>
+                            <a href="#">Acepto t&eacute;rminos y condiciones.</a>
                         </p>
                     </div>
-
                     <button type="submit" class="btn">Enviar</button>
                     <button type="submit" class="btn cancel" onclick="closeForm()">Cerrar</button>
                 </form>
@@ -78,15 +79,15 @@
             </div>
             <div class="contentright">
                 <div class="main-image">
-                    <img src="img/Isma_inicio_2.png" alt="Main image website">
+                    <img src="img/profileimg.JPG" alt="Main image website">
                 </div>
             </div>
         </div>
-        <div class="portfolio-title">
+        <div class="services-title">
             <p class="light">¿En qué te puedo ayudar?:</p>
         </div>
 
-        <div class="portfolio-content">
+        <div class="services-content">
             <div class="box">
                 <h2 class="box-title">Desarrollo web</h2>
                 <img src="img/Web-Development.jpg" alt="Web development imagen">
