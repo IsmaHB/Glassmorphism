@@ -289,9 +289,10 @@ span.glass {
 
 .box .box-title {
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     font-style: italic;
     color: #2f2e41;
+    text-decoration: underline;
 }
 
 .box-content {
@@ -339,13 +340,14 @@ span.glass {
 
 .box-content .box-hovertitle {
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     font-style: italic;
+    text-decoration: underline;
 }
 
 .box-content p {
     margin: 5px 10px 0 10px;
-    text-align: center, justify;
+    text-align: justify;
     font-style: italic;
     font-weight: 650;
 }
