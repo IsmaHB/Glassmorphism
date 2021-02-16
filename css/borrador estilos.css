@@ -9,3 +9,74 @@
     font-size: 15px;
     border-radius: 3px;
 }
+
+
+/*estilos del titulo portfolio*/
+
+.services-title {
+    position: relative;
+    font-family: 'Josefin Sans', serif;
+    align-content: center;
+    text-align: center;
+}
+
+.services-title p {
+    color: #2f2e41;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', serif;
+    font-style: italic;
+}
+
+.services-title .light {
+    font-weight: normal;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+
+/*estilos y definicion html del button para acceso directo a contacto*/
+
+<div class="button-box"><a href="presupuesto.html">Contáctame<i class="arrow-right"></i></a></div>.contentleft .button-box {
+    position: static;
+    margin-top: 10%;
+    align-self: center;
+}
+
+.contentleft .button-box a {
+    background-image: linear-gradient(to right, #614385 10%, #516395 50%, #614385 100%);
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200%;
+    /*ponemos 200% en background para que cuando se aplique el hover el efecto deseado sea visible*/
+    color: white;
+    box-shadow: 0 0 20px white;
+    border-radius: 10px;
+    display: flexbox;
+    text-decoration: none;
+    border: 1px solid black;
+    font-weight: 500;
+}
+
+.contentleft .button-box a .arrow-right {
+    border: 3px solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    content: none;
+}
+
+.contentleft .button-box a:hover {
+    background-position: right;
+    color: white;
+}
+
+.contentleft .button-box a .icon {
+    padding: 5px;
+}
