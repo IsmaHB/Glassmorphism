@@ -12,21 +12,21 @@ showSlides(slideIndex);
 function plusSlides(n) {
     showSlides(slideIndex += n)
 }
-//function currentSlides(){}
 
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("sliderImage");
-    var circle = document.getElementsByClassName("circle");
+    var circles = document.getElementsByClassName("circle");
+
     //alert (slides)
 
     //LIMPIAMOS CLASSES INNECESARIAS
     for (i = 0; i < slides.length; i++) {
-        slides(i).className = slides(i).className.replace(" nothidden", "");
-        circle(i).className = circle(i).className.replace(" nothidden", "");
+        slides[i].className = slides[i].className.replace(" nothidden", "");
+        circles[i].className = circles[i].className.replace(" selected", "");
 
     }
-    slides(slideIndex - 1).className += " nothidden";
-    circle(slideIndex - 1).className += " selected";
+    slides[slideIndex - 1].className += " nothidden";
+    circles[slideIndex - 1].className += " selected";
 
 }
