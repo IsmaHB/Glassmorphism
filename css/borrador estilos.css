@@ -1,4 +1,4 @@
-.wrapper .form .inputfield .custom_select select {
+    .wrapper .form .inputfield .custom_select select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -80,3 +80,82 @@
 .contentleft .button-box a .icon {
     padding: 5px;
 }
+
+
+/*CAJA PRINCIPAL*/
+
+.sliderBox {
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    border: ridge #9a533d;
+    border-radius: 25%;
+    box-shadow: 0 10px 20px black;
+}
+
+
+/*IMAGENES A MOSTRAR*/
+
+.sliderImage {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25%;
+}
+
+.nothidden {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25%;
+}
+
+
+/*FLECHAS DESPLAZAMIENTO*/
+
+.arrows {
+    width: 20px;
+    height: 20px;
+    border-bottom: #9a533d 6px solid;
+    border-left: #9a533d 6px solid;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.arrows.prev {
+    transform: rotate(45deg);
+    left: 20px;
+}
+
+.arrows.next {
+    transform: rotate(-135deg);
+    right: 20px;
+}
+
+
+/*POSICIONES DEL SLIDER*/
+
+.imagePosition {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.circle {
+    border: #9a533d 2px solid;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.selected {
+    background: #9a533d;

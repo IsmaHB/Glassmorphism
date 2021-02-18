@@ -466,83 +466,59 @@ span.glass {
 /*INICIO DE ESTILOS DEL CONTENIDO portfolio.html*/
 
 
-/*CAJA PRINCIPAL*/
+/*Contenedor galeria*/
 
-.sliderBox {
-    width: 50%;
-    height: 400px;
-    margin: 0 auto;
-    margin-top: 50px;
-    position: relative;
-    border: ridge #9a533d;
-    border-radius: 25%;
-    box-shadow: 0 10px 20px black;
+.gallerycontainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
 
-/*IMAGENES A MOSTRAR*/
+/*Titulo galeria*/
 
-.sliderImage {
-    display: none;
+.gallerytitle {
+    font-size: 1rem;
+    color: #9a533d;
+    font-family: 'Josefin Sans', serif;
+    font-style: italic;
+}
+
+
+/*Creamos 4 columnas adyacentes entre ellas*/
+
+.column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25%;
-}
-
-.nothidden {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25%;
+    border-radius: 10%;
+    box-shadow: #2f2e41;
 }
 
 
-/*FLECHAS DESPLAZAMIENTO*/
+/* Responsive layout - pasamos de 4 a 2 columnas */
 
-.arrows {
-    width: 20px;
-    height: 20px;
-    border-bottom: #9a533d 6px solid;
-    border-left: #9a533d 6px solid;
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
-    cursor: pointer;
-}
-
-.arrows.prev {
-    transform: rotate(45deg);
-    left: 20px;
-}
-
-.arrows.next {
-    transform: rotate(-135deg);
-    right: 20px;
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
 
-/*POSICIONES DEL SLIDER*/
+/* Responsive layout - solapamos las columnas en 1 */
 
-.imagePosition {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-.circle {
-    border: #9a533d 2px solid;
-    width: 10px;
-    height: 10px;
-    background: transparent;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.selected {
-    background: #9a533d;
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 
