@@ -4,7 +4,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body{
+    margin: 0;
+}
+.container {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -15,13 +18,14 @@ body {
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    padding-bottom: 2.5em;
 }
 
 
 /*estilo de la caja con efecto glass*/
 
 
-.container {
+.glass-container {
     position: relative;
     width: auto;
     height: fit-content;
@@ -166,11 +170,18 @@ body {
 
 /*inicio estilos de footer*/
 .footer{
+    height: 2.5em;
     width: 100%;
+    margin: 0;
     bottom: 0;
     background-color:black;
     color: #1e1b35;
     font-family: 'Times New Roman', Times, serif, black;
+}
+.footer-content{
+    margin:0;
+    padding: 0;
+    height: 100%;
 }
 
     /*final de estilos barra de navegación*/
