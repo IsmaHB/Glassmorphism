@@ -230,3 +230,15 @@
                     min-width: 0;
                 }
             }
+
+
+            <span class="glass"> </span>
+            span.glass {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-transform: uppercase;
+                overflow-y: visible;
+            }
+            

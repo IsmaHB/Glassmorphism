@@ -20,14 +20,6 @@ body {
 
 /*estilo de la caja con efecto glass*/
 
-span.glass {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    overflow-y: visible;
-}
 
 .container {
     position: relative;
@@ -171,6 +163,18 @@ span.glass {
 
 
 /*final de estilos barra de navegación*/
+
+/*inicio estilos de footer*/
+.footer{
+    width: 100%;
+    bottom: 0;
+    background-color:black;
+    color: #1e1b35;
+    font-family: 'Times New Roman', Times, serif, black;
+}
+
+    /*final de estilos barra de navegación*/
+
 
 
 /*INICIO DE ESTILOS DEL CONTENIDO index.html*/

@@ -8,14 +8,15 @@
     <meta name="Author" content="Ismael Hamud Bedmar" />
     <meta name="Portfolio_Personal" content="Portfolio con contacto, proyectos y solicitud de presupuesto">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="En este portfolio web muestro mis proyectos en desarrollo web, contacto y presupuestos para la contratación de servicios para la creación de webs responsives en cualquier dispositivo, dinámicas y con diseños atractivos personalizables"
-    />
+    <meta name="description"
+        content="En este portfolio web muestro mis proyectos en desarrollo web, contacto y presupuestos para la contratación de servicios para la creación de webs responsives en cualquier dispositivo, dinámicas y con diseños atractivos personalizables" />
     <meta name="category" content="Portfolio_Web">
     <meta name="keywords" content="Portfolio, Web Development, presupuesto, contacto" />
     <meta name="revising-after" content="15 days">
 
     <!--Declaración de fuentes extraídas de googlefont-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Yusei+Magic&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Yusei+Magic&display=swap"
+        rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" type="text/css">
 
     <!--Declaración de iconos fa extraídos en fontawesome CDN-->
@@ -29,103 +30,115 @@
 </head>
 
 <body>
-    <span class="glass"></span>
-    <div class="container">
 
-        <!--Barra de navegación y logo-->
-        <div class="navbar">
-            <a href="index.html" class="logo"><span>I</span>smael <span>H.B</span></a>
-            <ul class="list">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="portfolio.html">Proyectos</a></li>
-                <li><a href="presupuesto.html">Presupuesto</a></li>
-                <li><a href="contacto.html">Encu&eacute;ntranos</a></li>
-            </ul>
+    <div>
+        <div class="container">
 
-            <button class="button open-button" onclick="openForm()">¡Suscríbete gratis!</button>
-            <div class="form-popup" id="myForm">
-                <!--Dejamos el atributo "action" escrito por si queremos enlazarlo en el futuro con un archivo php para almacenamiento de datos -->
-                <form action="#" class="form-container">
-                    <h1>Newsletter</h1>
-                    <p>Recibe por correo promociones y cursos gratuitos</p>
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Introduce email..." name="email" required>
-                    <div class="inputfield-terms">
-                        <label class="check">
-                            <input type="checkbox" required>
-                            <span class="checkmark"></span>
-                        </label>
-                        <span>
-                            <a href="#">Acepto t&eacute;rminos y condiciones.</a>
-                        </span>
+            <!--Barra de navegación y logo-->
+            <div class="navbar">
+                <a href="index.html" class="logo"><span>I</span>smael <span>H.B</span></a>
+                <ul class="list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="portfolio.html">Proyectos</a></li>
+                    <li><a href="presupuesto.html">Presupuesto</a></li>
+                    <li><a href="contacto.html">Encu&eacute;ntranos</a></li>
+                </ul>
+
+                <button class="button open-button" onclick="openForm()">¡Suscríbete gratis!</button>
+                <div class="form-popup" id="myForm">
+                    <!--Dejamos el atributo "action" escrito por si queremos enlazarlo en el futuro con un archivo php para almacenamiento de datos -->
+                    <form action="#" class="form-container">
+                        <h1>Newsletter</h1>
+                        <p>Recibe por correo promociones y cursos gratuitos</p>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Introduce email..." name="email" required>
+                        <div class="inputfield-terms">
+                            <label class="check">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                            </label>
+                            <span>
+                                <a href="#">Acepto t&eacute;rminos y condiciones.</a>
+                            </span>
+                        </div>
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="submit" class="btn cancel" onclick="closeForm()">Cerrar</button>
+                    </form>
+                </div>
+            </div>
+            <!--fin barra de navegación y logo-->
+
+            <!--Sección de contenido-->
+            <div class="content">
+                <div class="contentleft">
+                    <div class="title">
+                        <h1>Hola,<br /> Soy <span>I</span>smael <span>H.B</span>. <br /> Soy web developer.</h1>
+                        <p class="light">Front End Developer <br /> <span class="and"> & </span> <br />Marketing
+                            assessment</p>
                     </div>
-                    <button type="submit" class="btn">Enviar</button>
-                    <button type="submit" class="btn cancel" onclick="closeForm()">Cerrar</button>
-                </form>
-            </div>
-        </div>
-        <!--fin barra de navegación y logo-->
-
-        <!--Sección de contenido-->
-        <div class="content">
-            <div class="contentleft">
-                <div class="title">
-                    <h1>Hola,<br/> Soy <span>I</span>smael <span>H.B</span>. <br/> Soy web developer.</h1>
-                    <p class="light">Front End Developer <br/> <span class="and"> & </span> <br/>Marketing assessment</p>
                 </div>
-            </div>
-            <div class="contentright">
-                <div class="boxprofile">
-                    <img src="img/profileimg.JPG" alt="Developer profile image">
-                    <div class="social-media-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
+                <div class="contentright">
+                    <div class="boxprofile">
+                        <img src="img/profileimg.JPG" alt="Developer profile image">
+                        <div class="social-media-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p><span>I</span>smael <span>H.B.</span></p>
                     </div>
-                    <p><span>I</span>smael <span>H.B.</span></p>
                 </div>
             </div>
+            <div class="services-title">
+                <p class="light">Especialidades:</p>
+            </div>
+
+            <div class="services-content">
+                <div class="box">
+                    <h2 class="box-title">Desarrollo web</h2>
+                    <img src="img/Web-Development.jpg" alt="Web development imagen">
+
+                    <div class="box-content">
+                        <h2 class="box-hovertitle">Desarrollo Web</h2>
+                        <p>Desarrollo de páginas web atractivas y que cumplan con su función para captar clientes.</p>
+                        <p>Como resultado, tendrás una web dinámica, adaptada a cualquier dispositivo e intuitiva al
+                            navegar en ella.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="box-title">Marketing Digital</h2>
+                    <img src="img/marketing-digital.jpg" alt="Marketing Digital imagen">
+                    <div class="box-content">
+                        <h2 class="box-hovertitle">Marketing digital</h2>
+                        <p>Conjunto de estrategias enfocadas en la promoci&oacuten de tu marca en internet.
+                        </p>
+                        <p>Elaboraci&oacute;n para que, sin tener conocimientos t&eacute;cnicos sobre la materia, puedas
+                            ver como evoluciona tu marca.</p>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="box-title">Mantenimiento de equipos</h2>
+                    <img src="img/reparacion-equipos.jpg" alt="Mantenimiento equipos informaticos imagen">
+                    <div class="box-content">
+                        <h2 class="box-hovertitle">Mantenimiento de equipos</h2>
+                        <p>¿Necesitas mantenimiento en los equipos informticos de tu empresa o instalar nuevos equipos?
+                        </p>
+                        <p>Servicio de mantenimiento de tus equipos, optimizaci&oacute;n y asesoramiento en la compra de
+                            equipo para procurar la mejor calidad-precio. </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="services-title">
-            <p class="light">Especialidades:</p>
-        </div>
+            <!--Pié de página-->
+        <footer class="footer">
+            <p>Hola</p>
+        </footer>
 
-        <div class="services-content">
-            <div class="box">
-                <h2 class="box-title">Desarrollo web</h2>
-                <img src="img/Web-Development.jpg" alt="Web development imagen">
-
-                <div class="box-content">
-                    <h2 class="box-hovertitle">Desarrollo Web</h2>
-                    <p>Desarrollo de páginas web atractivas y que cumplan con su función para captar clientes.</p>
-                    <p>Como resultado, tendrás una web dinámica, adaptada a cualquier dispositivo e intuitiva al navegar en ella.</p>
-                </div>
-            </div>
-            <div class="box">
-                <h2 class="box-title">Marketing Digital</h2>
-                <img src="img/marketing-digital.jpg" alt="Marketing Digital imagen">
-                <div class="box-content">
-                    <h2 class="box-hovertitle">Marketing digital</h2>
-                    <p>Conjunto de estrategias enfocadas en la promoci&oacuten de tu marca en internet.
-                    </p>
-                    <p>Elaboraci&oacute;n para que, sin tener conocimientos t&eacute;cnicos sobre la materia, puedas ver como evoluciona tu marca.</p>
-
-                </div>
-            </div>
-            <div class="box">
-                <h2 class="box-title">Mantenimiento de equipos</h2>
-                <img src="img/reparacion-equipos.jpg" alt="Mantenimiento equipos informaticos imagen">
-                <div class="box-content">
-                    <h2 class="box-hovertitle">Mantenimiento de equipos</h2>
-                    <p>¿Necesitas mantenimiento en los equipos informticos de tu empresa o instalar nuevos equipos?</p>
-                    <p>Servicio de mantenimiento de tus equipos, optimizaci&oacute;n y asesoramiento en la compra de equipo para procurar la mejor calidad-precio. </p>
-                </div>
-            </div>
+    </div>
 
 
-            <!--fin sección de contenido-->
-
-        </div>
 </body>
