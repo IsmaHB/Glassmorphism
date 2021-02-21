@@ -242,3 +242,99 @@
                 overflow-y: visible;
             }
             
+
+
+            /*ejemplo de galeria*/
+            <div class="gallerytitle">
+            <h1>Proyectos realizados</h1>
+        </div>
+        <div class="gallerycontainer">
+            <div class="column">
+                <h3 class="gallerytitle">Proyecto 1</h3>
+                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
+                    alt="Imagenes proyecto portfolio">
+                <h3 class="gallerytitle">Proyecto 1</h3>
+                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
+                    alt="Imagenes proyecto portfolio">
+            </div>
+            <div class="column">
+                <h3>Proyecto 1</h3>
+                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
+                    alt="Imagenes proyecto portfolio">
+                <a href="#" class="projectlink">Visitar proyecto</a>
+                <h3>Proyecto 1</h3>
+                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
+                    alt="Imagenes proyecto portfolio">
+            </div>
+            <div class="column">
+                <h3>Proyecto 1</h3>
+                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
+                    alt="Imagenes proyecto portfolio">
+                <h3>Proyecto 1</h3>
+                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
+                    alt="Imagenes proyecto portfolio">
+            </div>
+            <div class="column">
+                <h3>Proyecto 1</h3>
+                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
+                    alt="Imagenes proyecto portfolio">
+                <h3>Proyecto 1</h3>
+                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
+                    alt="Imagenes proyecto portfolio">
+            </div>
+        </div>
+
+        /*Titulo galeria*/
+
+.gallerytitle {
+    font-size: 1rem;
+    color: #9a533d;
+    font-family: 'Josefin Sans', serif;
+    font-style: italic;
+}
+
+/*Contenedor galeria*/
+
+.gallerycontainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+
+
+/*Creamos 4 columnas adyacentes entre ellas*/
+
+.column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: #2f2e41;
+}
+
+
+/* Responsive layout - pasamos de 4 a 2 columnas */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - solapamos las columnas en 1 */
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }

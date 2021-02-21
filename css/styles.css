@@ -11,7 +11,7 @@ body{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: radial-gradient(circle, #25412b 10%, #2311a8 42%, #8d8dc1 68%);
+    background-image: radial-gradient(circle, #25412b 20%, #2311a8 52%, #8d8dc1 68%);
     background-attachment: fixed;
     background-size: cover;
     display: flex;
@@ -36,6 +36,9 @@ body{
     backdrop-filter: blur(5.0px);
     border-radius: 20px;
     overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
 }
 
 
@@ -481,46 +484,61 @@ body{
 /*INICIO DE ESTILOS DEL CONTENIDO portfolio.html*/
 
 
-/*Contenedor galeria*/
-
-.gallerycontainer {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-
 /*Titulo galeria*/
 
-.gallerytitle {
-    font-size: 1rem;
+.gallery-title {
+    display: flex;
+    flex: 1 1 0px;
     color: #9a533d;
     font-family: 'Josefin Sans', serif;
     font-style: italic;
 }
 
+/*Contenedor galeria*/
 
-/*Creamos 4 columnas adyacentes entre ellas*/
 
-.column {
-    flex: 20%;
-    max-width: 25%;
-    padding: 0 4px;
+.gallery-container {
+    display: flex;
+    
+
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    border-radius: 10%;
-    box-shadow: #2f2e41;
+.gallery-image {
+    position: relative;
+    display: block;
+    flex: 1 1 0px;
+    transition:transform 1s;
+    margin-top: 25px;
 }
+
+.gallery-image img{
+    display: block;
+    max-width: 100%;
+}
+
+
+/*desplazamiento de imagenes en eje X cuando focus y hover*/
+.gallery-container:focus-within .gallery-image,
+.gallery-container:hover .gallery-image {
+    transform: translateX(-10%)
+}
+.gallery-image:focus ~ .gallery-image,
+.gallery-image:hover ~ .gallery-image {
+    transform:translateX(10%)
+}
+/*definición evento hover y focus*/
+.gallery-container .gallery-image:focus,
+.gallery-container .gallery-image:hover {
+    transform:scale(1.2);
+    z-index:1;
+}
+
 
 
 /* Responsive layout - pasamos de 4 a 2 columnas */
 
 @media screen and (max-width: 800px) {
-    .column {
+    .portfolio {
         flex: 50%;
         max-width: 50%;
     }
@@ -530,7 +548,7 @@ body{
 /* Responsive layout - solapamos las columnas en 1 */
 
 @media screen and (max-width: 600px) {
-    .column {
+    .portfolio {
         flex: 100%;
         max-width: 100%;
     }

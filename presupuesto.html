@@ -40,7 +40,27 @@
                     <li><a href="presupuesto.html">Presupuesto</a></li>
                     <li><a href="contacto.html">Encu&eacute;ntranos</a></li>
                 </ul>
-                <button class="button open-button">¡Suscríbete gratis!</button>
+                <button class="button open-button" onclick="openForm()">¡Suscríbete gratis!</button>
+                <div class="form-popup" id="myForm">
+                    <!--Dejamos el atributo "action" escrito por si queremos enlazarlo en el futuro con un archivo php para almacenamiento de datos -->
+                    <form action="#" class="form-container">
+                        <h1>Newsletter</h1>
+                        <p>Recibe por correo promociones y cursos gratuitos</p>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Introduce email..." name="email" required>
+                        <div class="inputfield-terms">
+                            <label class="check">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                            </label>
+                            <span>
+                                <a href="#">Acepto t&eacute;rminos y condiciones.</a>
+                            </span>
+                        </div>
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="submit" class="btn cancel" onclick="closeForm()">Cerrar</button>
+                    </form>
+                </div>
             </div>
             <!--fin barra de navegación y logo-->
 

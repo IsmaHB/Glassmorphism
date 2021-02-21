@@ -40,52 +40,42 @@
                     <li><a href="presupuesto.html">Presupuesto</a></li>
                     <li><a href="contacto.html">Encu&eacute;ntranos</a></li>
                 </ul>
-                <button class="button open-button">¡Suscríbete gratis!</button>
+                <button class="button open-button" onclick="openForm()">¡Suscríbete gratis!</button>
+                <div class="form-popup" id="myForm">
+                    <!--Dejamos el atributo "action" escrito por si queremos enlazarlo en el futuro con un archivo php para almacenamiento de datos -->
+                    <form action="#" class="form-container">
+                        <h1>Newsletter</h1>
+                        <p>Recibe por correo promociones y cursos gratuitos</p>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Introduce email..." name="email" required>
+                        <div class="inputfield-terms">
+                            <label class="check">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                            </label>
+                            <span>
+                                <a href="#">Acepto t&eacute;rminos y condiciones.</a>
+                            </span>
+                        </div>
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="submit" class="btn cancel" onclick="closeForm()">Cerrar</button>
+                    </form>
+                </div>
             </div>
             <!--fin barra de navegación y logo-->
 
             <!--Sección de contenido portfolio-->
-            <div class="gallerytitle">
-                <h1>Proyectos realizados</h1>
-            </div>
-            <div class="gallerycontainer">
-                <div class="column">
-                    <h3 class="gallerytitle">Proyecto 1</h3>
-                    <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                        alt="Imagenes proyecto portfolio">
-                    <h3 class="gallerytitle">Proyecto 1</h3>
-                    <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                        alt="Imagenes proyecto portfolio">
+                <div class="gallery-title">
+                    <h1>Proyectos realizados</h1>
                 </div>
-                <div class="column">
-                    <h3>Proyecto 1</h3>
-                    <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                        alt="Imagenes proyecto portfolio">
-                    <a href="#" class="projectlink">Visitar proyecto</a>
-                    <h3>Proyecto 1</h3>
-                    <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                        alt="Imagenes proyecto portfolio">
-                </div>
-                <div class="column">
-                    <h3>Proyecto 1</h3>
-                    <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                        alt="Imagenes proyecto portfolio">
-                    <h3>Proyecto 1</h3>
-                    <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                        alt="Imagenes proyecto portfolio">
-                </div>
-                <div class="column">
-                    <h3>Proyecto 1</h3>
-                    <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                        alt="Imagenes proyecto portfolio">
-                    <h3>Proyecto 1</h3>
-                    <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                        alt="Imagenes proyecto portfolio">
-                </div>
-            </div>
-            <!--fin sección de contenido portfolio-->
-
-
+                <div class="gallery-container">
+                    <a href="#animals" class="gallery-image"><img src="https://placeimg.com/640/480/animals" alt="Imagenes proyecto portfolio"></a>
+                    <a href="#architecture" class="gallery-image"><img src="https://placeimg.com/640/480/architecture" alt="Imagenes proyecto portfolio"></a>
+                    <a href="#nature" class="gallery-image"><img src="https://placeimg.com/640/480/nature" alt="Imagenes proyecto portfolio"></a>
+                    <a href="#people" class="gallery-image"><img src="https://placeimg.com/640/480/people" alt="Imagenes proyecto portfolio"></a>
+                    <a href="#tech" class="gallery-image"><img src="https://placeimg.com/640/480/tech" alt="Imagenes proyecto portfolio"></a>
+                  </div>
+           <!--fin sección de contenido portfolio-->
         </div>
     </div>
     <!--Pié de página-->
