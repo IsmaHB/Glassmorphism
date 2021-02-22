@@ -1,153 +1,153 @@
-            .wrapper .form .inputfield .custom_select select {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            outline: none;
-            width: 440px;
-            height: 100%;
-            padding: 10px;
-            font-size: 15px;
-            border-radius: 3px;
-        }
-        /*estilos del titulo portfolio*/
-        
-        .services-title {
-            position: relative;
-            font-family: 'Josefin Sans', serif;
-            align-content: center;
-            text-align: center;
-        }
-        
-        .services-title p {
-            color: #2f2e41;
-            text-transform: capitalize;
-            font-weight: 500;
-            font-size: 3rem;
-            font-family: 'Josefin Sans', serif;
-            font-style: italic;
-        }
-        
-        .services-title .light {
-            font-weight: normal;
-            font-size: 1.5em;
-            font-weight: 300;
-            font-style: italic;
-            text-transform: capitalize;
-        }
-        /*estilos y definicion html del button para acceso directo a contacto*/
-        
-        <div class="button-box"><a href="presupuesto.html">Contáctame<i class="arrow-right"></i></a></div>.contentleft .button-box {
-            position: static;
-            margin-top: 10%;
-            align-self: center;
-        }
-        
-        .contentleft .button-box a {
-            background-image: linear-gradient(to right, #614385 10%, #516395 50%, #614385 100%);
-            padding: 15px 30px;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200%;
-            /*ponemos 200% en background para que cuando se aplique el hover el efecto deseado sea visible*/
-            color: white;
-            box-shadow: 0 0 20px white;
-            border-radius: 10px;
-            display: flexbox;
-            text-decoration: none;
-            border: 1px solid black;
-            font-weight: 500;
-        }
-        
-        .contentleft .button-box a .arrow-right {
-            border: 3px solid white;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 3px;
-            transform: rotate(-45deg);
-            -webkit-transform: rotate(-45deg);
-            content: none;
-        }
-        
-        .contentleft .button-box a:hover {
-            background-position: right;
-            color: white;
-        }
-        
-        .contentleft .button-box a .icon {
-            padding: 5px;
-        }
-        /*CAJA PRINCIPAL*/
-        
-        .sliderBox {
-            width: 50%;
-            height: 400px;
-            margin: 0 auto;
-            margin-top: 50px;
-            position: relative;
-            border: ridge #9a533d;
-            border-radius: 25%;
-            box-shadow: 0 10px 20px black;
-        }
-        /*IMAGENES A MOSTRAR*/
-        
-        .sliderImage {
-            display: none;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 25%;
-        }
-        
-        .nothidden {
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 25%;
-        }
-        /*FLECHAS DESPLAZAMIENTO*/
-        
-        .arrows {
-            width: 20px;
-            height: 20px;
-            border-bottom: #9a533d 6px solid;
-            border-left: #9a533d 6px solid;
-            position: absolute;
-            top: 50%;
-            margin-top: -10px;
-            cursor: pointer;
-        }
-        
-        .arrows.prev {
-            transform: rotate(45deg);
-            left: 20px;
-        }
-        
-        .arrows.next {
-            transform: rotate(-135deg);
-            right: 20px;
-        }
-        /*POSICIONES DEL SLIDER*/
-        
-        .imagePosition {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            text-align: center;
-        }
-        
-        .circle {
-            border: #9a533d 2px solid;
-            width: 10px;
-            height: 10px;
-            background: transparent;
-            border-radius: 50%;
-            display: inline-block;
-        }
-        
-        .selected {
-            background: #9a533d;
-            /*GALERIA 
+                    .wrapper .form .inputfield .custom_select select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                outline: none;
+                width: 440px;
+                height: 100%;
+                padding: 10px;
+                font-size: 15px;
+                border-radius: 3px;
+            }
+            /*estilos del titulo portfolio*/
+            
+            .services-title {
+                position: relative;
+                font-family: 'Josefin Sans', serif;
+                align-content: center;
+                text-align: center;
+            }
+            
+            .services-title p {
+                color: #2f2e41;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 3rem;
+                font-family: 'Josefin Sans', serif;
+                font-style: italic;
+            }
+            
+            .services-title .light {
+                font-weight: normal;
+                font-size: 1.5em;
+                font-weight: 300;
+                font-style: italic;
+                text-transform: capitalize;
+            }
+            /*estilos y definicion html del button para acceso directo a contacto*/
+            
+            <div class="button-box"><a href="presupuesto.html">Contáctame<i class="arrow-right"></i></a></div>.content-left .button-box {
+                position: static;
+                margin-top: 10%;
+                align-self: center;
+            }
+            
+            .content-left .button-box a {
+                background-image: linear-gradient(to right, #614385 10%, #516395 50%, #614385 100%);
+                padding: 15px 30px;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200%;
+                /*ponemos 200% en background para que cuando se aplique el hover el efecto deseado sea visible*/
+                color: white;
+                box-shadow: 0 0 20px white;
+                border-radius: 10px;
+                display: flexbox;
+                text-decoration: none;
+                border: 1px solid black;
+                font-weight: 500;
+            }
+            
+            .content-left .button-box a .arrow-right {
+                border: 3px solid white;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                content: none;
+            }
+            
+            .content-left .button-box a:hover {
+                background-position: right;
+                color: white;
+            }
+            
+            .content-left .button-box a .icon {
+                padding: 5px;
+            }
+            /*CAJA PRINCIPAL*/
+            
+            .sliderBox {
+                width: 50%;
+                height: 400px;
+                margin: 0 auto;
+                margin-top: 50px;
+                position: relative;
+                border: ridge #9a533d;
+                border-radius: 25%;
+                box-shadow: 0 10px 20px black;
+            }
+            /*IMAGENES A MOSTRAR*/
+            
+            .sliderImage {
+                display: none;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 25%;
+            }
+            
+            .nothidden {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 25%;
+            }
+            /*FLECHAS DESPLAZAMIENTO*/
+            
+            .arrows {
+                width: 20px;
+                height: 20px;
+                border-bottom: #9a533d 6px solid;
+                border-left: #9a533d 6px solid;
+                position: absolute;
+                top: 50%;
+                margin-top: -10px;
+                cursor: pointer;
+            }
+            
+            .arrows.prev {
+                transform: rotate(45deg);
+                left: 20px;
+            }
+            
+            .arrows.next {
+                transform: rotate(-135deg);
+                right: 20px;
+            }
+            /*POSICIONES DEL SLIDER*/
+            
+            .imagePosition {
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .circle {
+                border: #9a533d 2px solid;
+                width: 10px;
+                height: 10px;
+                background: transparent;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            
+            .selected {
+                background: #9a533d;
+                /*GALERIA 
     <ul class="listgallery">
     <li class="itemgallery">
         <a href="">
@@ -173,168 +173,108 @@
     </li>
 </ul>
 */
-            /*BASIC*/
-            .listgallery {
-                display: flex;
-                margin: 0;
-            }
-            .listgalleryreverse {
-                display: flex;
-                flex-wrap: wrap;
-                margin: 0;
-                flex-direction: row-reverse;
-            }
-            .itemgallery {
-                height: 40vh;
-                margin: 0;
-                list-style-type: none;
-            }
-            .itemgallery:last-child {
-                /*    There's no science in using "10" here. In all my testing, this delivered the best results.*/
-                flex-grow: 10;
-            }
-            .itemgallery img {
-                max-height: 100%;
-                min-width: 100%;
-                object-fit: cover;
-                vertical-align: bottom;
-            }
-            /* ADVANCED*/
-            /*Portrait*/
-            @media (max-aspect-ratio: 1/1) {
-                .itemgallery {
-                    height: auto;
-                }
-            }
-            /* Short screens*/
-            @media (max-height: 480px) {
-                .itemgallery {
-                    height: auto;
-                }
-            }
-            /* Smaller screens in portrait*/
-            @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+                /*BASIC*/
                 .listgallery {
-                    flex-direction: row;
+                    display: flex;
+                    margin: 0;
                 }
                 .listgalleryreverse {
-                    flex-direction: row;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0;
+                    flex-direction: row-reverse;
                 }
                 .itemgallery {
-                    height: auto;
-                    width: 100%;
+                    height: 40vh;
+                    margin: 0;
+                    list-style-type: none;
+                }
+                .itemgallery:last-child {
+                    /*    There's no science in using "10" here. In all my testing, this delivered the best results.*/
+                    flex-grow: 10;
                 }
                 .itemgallery img {
-                    width: 100%;
-                    max-height: auto;
-                    min-width: 0;
+                    max-height: 100%;
+                    min-width: 100%;
+                    object-fit: cover;
+                    vertical-align: bottom;
                 }
-            }
-
-
-            <span class="glass"> </span>
-            span.glass {
-                position: relative;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-transform: uppercase;
-                overflow-y: visible;
-            }
-            
-
-
-            /*ejemplo de galeria*/
-            <div class="gallerytitle">
-            <h1>Proyectos realizados</h1>
-        </div>
-        <div class="gallerycontainer">
-            <div class="column">
-                <h3 class="gallerytitle">Proyecto 1</h3>
-                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                    alt="Imagenes proyecto portfolio">
-                <h3 class="gallerytitle">Proyecto 1</h3>
-                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                    alt="Imagenes proyecto portfolio">
-            </div>
-            <div class="column">
-                <h3>Proyecto 1</h3>
-                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                    alt="Imagenes proyecto portfolio">
-                <a href="#" class="projectlink">Visitar proyecto</a>
-                <h3>Proyecto 1</h3>
-                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                    alt="Imagenes proyecto portfolio">
-            </div>
-            <div class="column">
-                <h3>Proyecto 1</h3>
-                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                    alt="Imagenes proyecto portfolio">
-                <h3>Proyecto 1</h3>
-                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                    alt="Imagenes proyecto portfolio">
-            </div>
-            <div class="column">
-                <h3>Proyecto 1</h3>
-                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                    alt="Imagenes proyecto portfolio">
-                <h3>Proyecto 1</h3>
-                <img src="https://source.unsplash.com/random/320x240" class="galleryimage"
-                    alt="Imagenes proyecto portfolio">
-            </div>
-        </div>
-
-        /*Titulo galeria*/
-
-.gallerytitle {
-    font-size: 1rem;
-    color: #9a533d;
-    font-family: 'Josefin Sans', serif;
-    font-style: italic;
-}
-
-/*Contenedor galeria*/
-
-.gallerycontainer {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-
-
-
-/*Creamos 4 columnas adyacentes entre ellas*/
-
-.column {
-    flex: 20%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    border-radius: 10%;
-    box-shadow: #2f2e41;
-}
-
-
-/* Responsive layout - pasamos de 4 a 2 columnas */
-
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-
-/* Responsive layout - solapamos las columnas en 1 */
-
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
+                /* ADVANCED*/
+                /*Portrait*/
+                @media (max-aspect-ratio: 1/1) {
+                    .itemgallery {
+                        height: auto;
+                    }
+                }
+                /* Short screens*/
+                @media (max-height: 480px) {
+                    .itemgallery {
+                        height: auto;
+                    }
+                }
+                /* Smaller screens in portrait*/
+                @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+                    .listgallery {
+                        flex-direction: row;
+                    }
+                    .listgalleryreverse {
+                        flex-direction: row;
+                    }
+                    .itemgallery {
+                        height: auto;
+                        width: 100%;
+                    }
+                    .itemgallery img {
+                        width: 100%;
+                        max-height: auto;
+                        min-width: 0;
+                    }
+                }
+                <span class="glass"></span>span.glass {
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-transform: uppercase;
+                    overflow-y: visible;
+                }
+                /*ejemplo de galeria*/
+                <div class="gallerytitle"><h1>Proyectos realizados</h1></div><div class="gallerycontainer"><div class="column"><h3 class="gallerytitle">Proyecto 1</h3><img src="https://source.unsplash.com/random/320x240" class="galleryimage" alt="Imagenes proyecto portfolio"><h3 class="gallerytitle">Proyecto 1</h3><img src="https://source.unsplash.com/random/320x240" class="galleryimage" alt="Imagenes proyecto portfolio"></div><div class="column"><h3>Proyecto 1</h3><img src="https://source.unsplash.com/random/320x240" class="galleryimage" alt="Imagenes proyecto portfolio"><a href="#" class="projectlink">Visitar proyecto</a><h3>Proyecto 1</h3><img src="https://source.unsplash.com/random/320x240" class="galleryimage" alt="Imagenes proyecto portfolio"></div><div class="column"><h3>Proyecto 1</h3><img src="https://source.unsplash.com/random/320x240" class="galleryimage" alt="Imagenes proyecto portfolio"><h3>Proyecto 1</h3><img src="https://source.unsplash.com/random/320x240" class="galleryimage" alt="Imagenes proyecto portfolio"></div><div class="column"><h3>Proyecto 1</h3><img src="https://source.unsplash.com/random/320x240" class="galleryimage" alt="Imagenes proyecto portfolio"><h3>Proyecto 1</h3><img src="https://source.unsplash.com/random/320x240" class="galleryimage" alt="Imagenes proyecto portfolio"></div></div>/*Titulo galeria*/
+                .gallerytitle {
+                    font-size: 1rem;
+                    color: #9a533d;
+                    font-family: 'Josefin Sans', serif;
+                    font-style: italic;
+                }
+                /*Contenedor galeria*/
+                .gallerycontainer {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                }
+                /*Creamos 4 columnas adyacentes entre ellas*/
+                .column {
+                    flex: 20%;
+                    max-width: 25%;
+                    padding: 0 4px;
+                }
+                .column img {
+                    margin-top: 8px;
+                    vertical-align: middle;
+                    width: 100%;
+                    border-radius: 10%;
+                    box-shadow: #2f2e41;
+                }
+                /* Responsive layout - pasamos de 4 a 2 columnas */
+                @media screen and (max-width: 800px) {
+                    .column {
+                        flex: 50%;
+                        max-width: 50%;
+                    }
+                }
+                /* Responsive layout - solapamos las columnas en 1 */
+                @media screen and (max-width: 600px) {
+                    .column {
+                        flex: 100%;
+                        max-width: 100%;
+                    }
