@@ -154,6 +154,10 @@ body {
     vertical-align: middle;
 }
 
+.footer-column .fas {
+    margin-right: 10px;
+}
+
 .footer .social-media-icons {
     position: static;
     display: flex;
