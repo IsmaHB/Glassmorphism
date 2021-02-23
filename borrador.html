@@ -1,0 +1,22 @@
+<div class="cookies-container">
+    <div class="cookies-content">
+        <p> Utilizamos cookies propias y de terceros,para mantener sus preferencias y analizar sus hábitos de navegación en nuestra página web, con la finalidad de garantizar la calidad,seguridad y mejora de los servicios ofrecidos a través de la misma. Las
+            cookies pueden ser aceptadas, rechazadas, bloqueadas y borradas, según desee. Ello podrá hacerlo mediante las opciones disponibles en la presente ventana o a través de la configuración de su navegador, según el caso. Más información en el
+            apartado
+            <a style="text-decoration: none; cursor: pointer;" href="/politica-cookies" title="Politica de Cookies">Política de Cookies</a> de nuestra página web.
+        </p>
+        <div class="cookies-text text-center buttons-line">
+            <button type="submit" class="btn" onclick="closeForm();" id="cookies_accept"><i class="fas fa-check"></i>Aceptar</button>
+            <button type="submit" class="btn cancel" onclick="closeForm();" id="cookies_refuse">Rechazar</button></div>
+    </div>
+
+</div>
+
+//SCRIPT DE COOKIES// function cookies(functions) { const container = document.querySelector('.cookies-container'); const save = document.querySelector('.cookies-save'); if (!container || !save) return null; const localPref = JSON.parse(window.localStorage.getItem('cookies-pref'));
+if (localPref) activateFunctions(localPref); function getFormPref() { return [...document.querySelectorAll('[data-function]')] .filter((el) => el.checked) .map((el) => el.getAttribute('data-function')); } function activateFunctions(pref) { pref.forEach((f)
+=> functions[f]()); container.style.display = 'none'; window.localStorage.setItem('cookies-pref', JSON.stringify(pref)); } function handleSave() { const pref = getFormPref(); activateFunctions(pref); } save.addEventListener('click', handleSave); } function
+marketing() { console.log('Função de marketing'); } function analytics() { console.log('Função de analytics'); } cookies({ marketing, analytics, }); /*BARRA DE COOKIES*/ .cookies-container { color: #222; position: fixed; width: 100%; bottom: 2rem; z-index:
+1000; margin-right: 25%; margin-left: 25% } .cookies-content { background: white; max-width: 520px; border-radius: 5px; padding: 1px 1px 10px 5px; margin: 0 auto; display: inline-block; grid-template-columns: 1fr auto; gap: 0.5rem; opacity: 0; transform:
+translateY(1rem); animation: slideUp 0.5s forwards; text-align: justify; } @keyframes slideUp { to { transform: initial; opacity: initial; } } .buttons-line { padding: 15px; float: left; width: 100%; display: block; margin: -15px 0 10px; } .btn { background:
+#28ad2d; color: white; padding: 6px 8px 6px 8px; border: none; cursor: pointer; margin-bottom: 7.5px; border-radius: 5px; border: 1px solid #2f2e41; } .cancel { background-color: #d7dbde; color: black !important; } @media (max-width: 500px) { .cookies-content
+{ grid-template-columns: 1fr; } }
