@@ -102,6 +102,7 @@
     
     .navbar .social-media-icons a {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -124,17 +125,15 @@
         width: 100%;
         min-height: 100px;
         border: 1px solid black;
-        background: #9fa2a1;
+        background: black;
         backdrop-filter: blur(5.0px);
         z-index: 1;
         justify-items: center;
-        align-items: center;
         font-family: 'Josefin Sans', serif;
         margin-top: 0;
     }
     
     .footer-content {
-        margin-top: 10%;
         padding: 10px;
         height: 250px;
     }
@@ -155,6 +154,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-top: 5%;
+        margin-left: 2%;
     }
     
     .footer .social-media-icons a {
@@ -171,11 +172,27 @@
         transition: transform 0.5s;
         border-radius: 50%;
     }
+    
+    .footer .widget-title {
+        text-align: left;
+        margin-top: 2%;
+        font-style: italic;
+        color: #9a533d;
+        font-weight: 650;
+    }
+    
+    .footer .text-widget,
+    .footer .text-widget a {
+        color: white;
+        text-decoration: none;
+    }
     /*button newsletter*/
     
     .button {
-        position: static;
+        position: relative;
         display: flex;
+        margin-top: 5%;
+        margin-left: 15%;
         border: 1px solid black;
         color: white;
         background: #9a533d;
@@ -184,8 +201,6 @@
         text-transform: uppercase;
         font-family: 'Josefin Sans', serif;
         transition: color 300ms, background 300ms, border 300ms linear;
-        right: 5%;
-        bottom: 30%;
     }
     
     .button:hover {
@@ -307,6 +322,7 @@
         transform: translate(-50px, -50px);
         transition: transform 0.3;
     }
+    /*ICONOS DENTRO HOVER FOTO PERFIL*/
     
     .social-media-icons a:hover {
         color: #2f2e41;
@@ -546,6 +562,7 @@
     .gallery-title {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         color: #9a533d;
         font-family: 'Josefin Sans', serif;
         font-style: italic;
@@ -557,7 +574,6 @@
     }
     
     .gallery-title h1 {
-        display: block;
         font-size: 38px;
         margin-block-start: auto;
         margin-block-end: auto;
